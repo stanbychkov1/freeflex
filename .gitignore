@@ -15,10 +15,9 @@ __pycache__/
 *.sublime-workspace
 
 
-staticfiles/admin
-staticfiles/drf-yasg
-staticfiles/rest_framework
-staticfiles/rest_framework_swagger
+staticfiles/*
+static/*
+media/uploads/*
 
 
 db.sqlite3
