@@ -32,6 +32,18 @@ DB_PORT=5432
 ```bash
 docker-compose up --build
 ````
+Полсе запуска контейнера в командной строке в корневом каталоге приложения нужно выполнить следующие команды для создания администратора(superuser)
+```bash
+docker ps
+````
+Найти id контейнера freeflex_web и выполнить комманду:
+```bash
+docker exec -it <container_id> bash
+````
+Далле внутри контейнера выполните следующую комманду и действовать по указаниям системы:
+```bash
+python manage.py createsuper -u <username>
+````
 Воспользуетесь Swagger, чтоб увидеть полные возможности API.\
 ## Основные end-points:
 [localhost/admin/](localhost/admin/) - административная часть\
